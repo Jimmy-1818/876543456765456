@@ -73,4 +73,5 @@ body{
 .calculator__info {
     text-transform: capitalize;
     margin-left: 10%;
+    font-size: calc(1.625rem + .9vw)
 }
