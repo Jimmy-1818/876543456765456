@@ -1,0 +1,94 @@
+@import './affiliation/_sliding-calculator.css'
+
+$genuinyCol: #0ABBB5
+
+body
+	box-sizing: border-box
+	font-family: Helvetica, Opens-sans, sans-serif
+	font-size: 1.8rem
+	padding: 0
+	margin: 0
+
+html
+	font-size: 62.5%
+
+.navbar
+	display: flex
+	flex-wrap: wrap
+	column-gap: 25px
+
+	padding: 10px 30px
+	width: 100%
+	position: fixed
+	top: 0px
+	z-index: 4
+	background-color: $genuinyCol
+	color: white
+	&:hover
+		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.6)
+
+	h1
+		font-size: 4rem
+		margin: 0
+
+	.navbar-brand img
+		max-width: 40px
+		padding: 0
+
+
+/******nav tabs******/
+
+.navbar-nav
+	display: flex
+	column-gap: 10px
+
+
+/******nav dropdown**/
+
+.navbar-toggler
+	border: none
+
+.navbar-toggler-icon
+	width: 2.5rem
+	height: 2.5rem
+
+.navbar-collapse
+	text-align: center
+	
+	.nav-link
+		color: white
+		padding: 0
+	.nav-item
+		padding: 0
+		margin: 5px
+
+#video-tedex
+	width: 20vw
+	height: 16/9*20vw
+
+.container
+	margin-top: 68px
+
+.card-side
+	max-width: 100%
+	display: flex
+	flex: 1 1 100%
+	justify-content: space-between
+
+.card
+	width: 80%
+	max-width: 850px
+	margin-top: 40px
+	border-style: none
+	&:first-child
+		margin-top: 180px
+
+
+.side-content
+	max-width: 300px
+
+.accordion-button
+	color: #101010
+	&:not(.collapsed)
+		background-color: rgba(10,187,181,0.3)
+		color: #101010
