@@ -21,21 +21,20 @@ html
 	width: 100%
 	position: fixed
 	top: 0px
-	z-index: 4
+	z-index: 5
 	background-color: $genuinyCol
 	color: white
 	&:hover
-		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.6)
+		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
 
 	h1
 		font-size: 4rem
 		margin: 0
 
-	.navbar-brand 
-		img
-			max-width: 40px
-			padding: 0
-		h1
+	.navbar-brand img
+		max-width: 40px
+		padding: 0
+	.navbar-brand h1
 		color: white
 
 /******nav tabs******/
@@ -67,6 +66,41 @@ html
 		padding: 0
 		margin: 5px
 
+
+#wave-top
+	position: absolute
+	background-color: $genuinyCol
+	color: white
+	z-index: -1
+
+.smartphone-div
+	width: 400px
+	background-color: gray
+	position: relative
+	left: 100px
+	.smartphone
+		width: 200px
+		position: absolute
+		top: 100px
+		z-index: 4
+	.screenshot
+		width: 183px
+		position: absolute
+		top: 119px
+		left: 9px
+		z-index: 3
+		border-radius: 0 0 15px 15px
+	.filler
+		background-color: white
+		position: absolute
+		top: 106px
+		left: 9px
+		z-index: 2
+		width: 183px
+		height: 22px
+		border-radius: 20px 20px 0 0
+
+
 #video-tedex
 	width: 20vw
 	height: 16/9*20vw
@@ -85,8 +119,9 @@ html
 	max-width: 850px
 	margin-top: 40px
 	border-style: none
-	&:first-child
-		margin-top: 180px
+	background-color: transparent
+	&:first-of-type
+		margin-top: 400px
 
 
 .side-content
@@ -97,3 +132,4 @@ html
 	&:not(.collapsed)
 		background-color: rgba(10,187,181,0.3)
 		color: #101010
+
