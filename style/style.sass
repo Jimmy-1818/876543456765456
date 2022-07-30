@@ -24,12 +24,14 @@ html
 	z-index: 5
 	background-color: $genuinyCol
 	color: white
-	&:hover
+	html:not([data-scroll='0'])
 		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
 
 	h1
 		font-size: 4rem
 		margin: 0
+		@media (max-width: 480px)
+			font-size: 8vw
 
 	.navbar-brand img
 		max-width: 40px
@@ -40,7 +42,8 @@ html
 /******nav tabs******/
 
 .navbar
-	min-width: 350px
+	min-width: 324px
+	min-height: 74.25px
 
 .navbar-nav
 	display: flex
@@ -136,3 +139,4 @@ html
 		background-color: rgba(10,187,181,0.3)
 		color: #101010
 
+$layout-breakpoint-small: 480px
