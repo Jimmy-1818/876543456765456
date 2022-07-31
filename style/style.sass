@@ -12,6 +12,11 @@ body
 html
 	font-size: 62.5%
 
+
+html:not([data-scroll='0']) 
+	.navbar
+		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
+
 .navbar
 	display: flex
 	flex-wrap: wrap
@@ -24,8 +29,7 @@ html
 	z-index: 5
 	background-color: $genuinyCol
 	color: white
-	html:not([data-scroll='0'])
-		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
+	transition: 0.2s
 
 	h1
 		font-size: 4rem
@@ -76,7 +80,7 @@ html
 
 	#wave-top
 		position: absolute
-		background-color: $genuinyCol
+		background: linear-gradient(180deg, rgba(10,187,181,1) 10%, rgba(20,207,201,0.2) 100%)
 		color: white
 		z-index: -1
 	.smartphone-div
