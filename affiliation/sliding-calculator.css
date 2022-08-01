@@ -7,8 +7,8 @@ body{
     min-width: 355px;
     max-width: 800px;
     margin: 130px auto 0 auto;
-    padding: 30px 15px;
-    border: 1px solid #000;
+    padding-top: 25px;
+    border: 4px solid #0abbb5;
     border-radius: 45px;
     background: white;
 }
@@ -48,7 +48,7 @@ body{
 
 
 .calculator_row_monthly{
-    margin-bottom: 4%;
+    margin-bottom: 10%;
 }
 
 .calculator_row_monthly label{
@@ -71,6 +71,10 @@ h2.info {
     text-transform: capitalize;
     margin: 0 auto 15px 20px;
     font-size: calc(1.325rem + .9vw)
+}
+
+.box-info{
+    padding: 2vw;
 }
 
 .box-info p{

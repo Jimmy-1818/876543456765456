@@ -10,7 +10,7 @@ document.getElementById("tip5").addEventListener("change", autentica_calc);
 
 var calculator__rows = document.getElementsByClassName("calculator__row")
 function pointer_slider_update(){
-    document.getElementById("slider-value-montlhy").innerHTML = "x "+document.getElementById("tip_monthly").value
+    document.getElementById("slider-value-montlhy").innerHTML = "x "+document.getElementById("tip_monthly").value + "€"
     document.getElementById("slider-value-1").innerHTML = "x "+document.getElementsByClassName("calculator__tip")[0].value
     document.getElementById("slider-value-2").innerHTML = "x "+document.getElementsByClassName("calculator__tip")[1].value
     document.getElementById("slider-value-3").innerHTML = "x "+document.getElementsByClassName("calculator__tip")[2].value
