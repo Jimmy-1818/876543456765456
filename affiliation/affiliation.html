@@ -58,12 +58,12 @@
 	</header>
 		
 		<main class="container">
-			<h1 class="title">Filiera</h1>
-			<p>La filiera è il ventaglio di contatti che l'utente porta in app<br>
+			<h1 class="title p-ft">Filiera</h1>
+			<p class="p-ft">La filiera è il ventaglio di contatti che l'utente porta in app<br>
 				Per fare un esempio porto 2 persone che a loro volta aggiungono ognuno 2 persone: guadagnerò su 6 utenti (due al 1° livello e 4 al 2°)<br>
 				Seguendo il valore della condivisione che fonda l'app chi porterà più utenti riceverà dei premi. Per darti un'idea del potenziale puoi utilizzare il calcolatore messo a disposizione su questa pagina.
 				<br><br>
-				Prova il calcolatore e dai un'occhiata alle tabelle per vedere i numeri che rendono questo possibile, sono riportati anche il valore dei premi per utente</p>
+				Prova il calcolatore e dai un'occhiata alle tabelle per vedere i numeri che rendono questo possibile, sono riportati anche i valori dei premi per utente evidenziati in giallo</p>
 			<p></p>
 							
 			<div class="wrapper">
@@ -122,19 +122,164 @@
 
 
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="p-ft">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+
+			<br><br><br><br><br><br>
+			
+
+			<table>
+			  <tr>
+			    <th>Livello</th>
+			    <th>Numero utenti</th>
+			    <th>Compenso <br>
+			    per utente</th>
+			    <th>Premio <br>
+			    per livello</th>
+			  </tr>
+			  <tr>
+			    <td>1°</td>
+			    <td>10</td>
+			    <td>10€</td>
+			    <th>100€</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x10</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>2°</td>
+			    <td>100</td>
+			    <td>0,5€</td>
+			    <th>50</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x5</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>3°</td>
+			    <td>500</td>
+			    <td>1€</td>
+			    <th>500€</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x6</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>4°</td>
+			    <td>3'000</td>
+			    <td>1,5€</td>
+			    <th>4'500€</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x7</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>5°</td>
+			    <td>21'000</td>
+			    <td>2€</td>
+			    <th>42'000€</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>Totale utenti:<br>
+			    24'610</td>
+			    <td></td>
+			    <th>Totale premio:<br>
+			    47'150</th>
+			  </tr>
+			</table>
+
+
+			<br><br>
+			<table>
+			  <tr>
+			    <th>Livello</th>
+			    <th>Numero utenti</th>
+			    <th>Compenso <br>
+			    per utente</th>
+			    <th>Premio <br>
+			    per livello</th>
+			  </tr>
+			  <tr>
+			    <td>1°</td>
+			    <td>s1</td>
+			    <td>10€</td>
+			    <th>s1*10 + €</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x3</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>2°</td>
+			    <td>s1*s2</td>
+			    <td>0,5€</td>
+			    <th>s1*s2*0,5 + €</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x2</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>3°</td>
+			    <td>s1*s2*s3</td>
+			    <td>1€</td>
+			    <th>s1*s2*s3*1 + €</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x2</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>4°</td>
+			    <td>s1*s2*s3*s4</td>
+			    <td>1,5€</td>
+			    <th>s1*s2*s3*s4*1,5 + €</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>x2</td>
+			    <td></td>
+			    <th></th>
+			  </tr>
+			  <tr>
+			    <td>5°</td>
+			    <td>s1*s2*s3*s4*s5</td>
+			    <td>2€</td>
+			    <th>s1*s2*s3*s4*s5*2 + €</th>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>Totale utenti:</td>
+			    <td></td>
+			    <th>Totale premio:</th>
+			  </tr>
+
+			</table>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</main>
 
 	<footer>

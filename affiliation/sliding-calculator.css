@@ -3,9 +3,15 @@ body{
     background: rgba(10, 186, 181, 0.2);
 }
 
+.p-ft{
+    padding: 5px 3vw;
+}
+
 .title{
     padding-top: 7rem;
 }
+
+
 
 .wrapper {
     min-width: 340px;
