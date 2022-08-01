@@ -74,11 +74,15 @@ h2.info {
 }
 
 .box-info{
-    padding: 2vw 2vw 30px 2vw;
+    padding: 2.2vw 2.2vw 30px 2.2vw;
 }
 
 .box-info p{
     font-size: calc(1rem + 0.6vw);
+}
+
+.rendita{
+    padding-right: 1vw;
 }
 
 .result__row{
