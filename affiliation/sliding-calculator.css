@@ -1,6 +1,6 @@
 
 body{
-    background: rgba(10, 186, 181, 0.2);
+
 }
 
 .p-ft{
@@ -136,4 +136,16 @@ input{
     width: 30%;
 }
 
+.table-multiplier{
+    background-color: #0abbb5;
+    color: white;
+    font-weight: bold;
+}
 
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}

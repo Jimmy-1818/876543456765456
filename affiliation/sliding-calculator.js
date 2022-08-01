@@ -43,8 +43,10 @@ function autentica_calc(){
 
 
 
-    document.getElementById("rendita_result").innerHTML = result2_eur
-    document.getElementById("autentica_result").innerHTML = result_eur
+    document.getElementsByClassName("rendita_result")[0].innerHTML = result2_eur
+    document.getElementsByClassName("rendita_result")[1].innerHTML = result2_eur
+    document.getElementsByClassName("autentica_result")[0].innerHTML = result_eur
+    document.getElementsByClassName("autentica_result")[1].innerHTML = result_eur
 
 }
 
