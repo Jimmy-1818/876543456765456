@@ -47,4 +47,6 @@ function autentica_calc(){
     document.getElementById("autentica_result").innerHTML = result_eur
 
 }
-pointer_slider_update()
+
+
+autentica_calc()
