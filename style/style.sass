@@ -21,9 +21,6 @@ html
 	font-size: 62.5%
 
 
-html:not([data-scroll='0'])
-		/**box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)**/
-
 
 .container-navbar
 	position: fixed
@@ -35,29 +32,50 @@ html:not([data-scroll='0'])
 	width: 100%
 	z-index: 5
 	background-color: transparent
+	.navbar
+		height: $nav-height
+		min-height: 40px
+		width: 100%
+		max-width: 2000px
+		padding: 0 5%
+		position: fixed
+		top: 0
+		z-index: 6
+		color: white
+		box-sizing: border-box
+		transition: padding 1s ease
+		@media (min-width: 480px)
+			padding-top: 10px
+			padding-bottom: 10px
 
-.navbar
-	height: $nav-height
-	min-height: 40px
-	width: 100%
-	max-width: 2000px
-	padding: 0 5%
-	position: fixed
-	top: 0px
-	z-index: 6
-	color: white
-	@media (min-width: 480px)
-		margin-top: 10px
+
 
 	.navbar-brand img
 		width: 60vw
 		max-width: 280px
 		padding: 0
-	.navbar-brand img.black
-		display: none
 
-.navbar-slide
+html:not([data-scroll='0'])
+	.container-navbar-slide
+		top: 0
+		.navbar-slide
+			top: 0
+
+
+.container-navbar-slide
+	@extend .container-navbar
+	background-color: $genuinyCol
 	top: -300px
+	box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
+	transition: 0.5s ease
+	.navbar-slide
+		position: fixed
+		top: -300px
+		background-color: $genuinyCol
+		transition: 0.5s ease
+		li.nav-item a
+			color: white
+
 
 
 .navbar-toggler
@@ -114,6 +132,10 @@ html:not([data-scroll='0'])
 
 /*******smartphone********/
 
+.smartphone-bg
+	background-color: #ccc
+
+
 .smartphone-div
 	position: relative
 	left: 50vw
@@ -126,7 +148,9 @@ html:not([data-scroll='0'])
 	display: flex
 	align-items: center
 	@media (min-width: 480px)
-		left: 10vw
+		left: 15vw		
+		transform: translate(0%, -50%)
+
 
 	.smartphone
 		width: 100%
