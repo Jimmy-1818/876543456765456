@@ -21,9 +21,8 @@ html
 	font-size: 62.5%
 
 
-html:not([data-scroll='0']) 
-	.container-navbar
-		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
+html:not([data-scroll='0'])
+		/**box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)**/
 
 
 .container-navbar
@@ -35,28 +34,32 @@ html:not([data-scroll='0'])
 	min-height: 40px
 	width: 100%
 	z-index: 5
-	background-color: $genuinyCol
+	background-color: transparent
+	transition: background-color 0.5s ease
 
 .navbar
-	background-color: $genuinyCol
 	height: $nav-height
 	min-height: 40px
 	width: 100%
-	max-width: 1600px
+	max-width: 2000px
 	padding: 0 5%
 	position: fixed
 	top: 0px
 	z-index: 6
 	color: white
-	transition: 0.2s
+	@media (min-width: 480px)
+		margin-top: 10px
 
 	.navbar-brand img
 		width: 60vw
-		max-width: 300px
+		max-width: 280px
 		padding: 0
+	.navbar-brand img.black
+		display: none
 
+.navbar-slide
+	top: -300px
 
-/******nav dropdown**/
 
 .navbar-toggler
 	margin-left: 20px
@@ -70,14 +73,16 @@ html:not([data-scroll='0'])
 	text-align: center
 	
 	.nav-link
-		color: white
+		color: $genuinyCol
 		padding: 0
-		transition: 2s
-		&:hover
-			text-decoration: underline
+		transition: 2s		
+
 	.nav-item
 		padding: 0
 		margin: 5px
+
+
+
 
 
 /*******msg linea*********/
@@ -162,6 +167,8 @@ html:not([data-scroll='0'])
 
 .container
 	margin-top: 68px
+	max-width: 2000px
+	padding: 5vw
 
 .card-side
 	max-width: 100%
@@ -171,7 +178,6 @@ html:not([data-scroll='0'])
 
 .card
 	width: 80%
-	max-width: 850px
 	margin-top: 40px
 	border-style: none
 	background-color: transparent
