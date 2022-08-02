@@ -35,7 +35,6 @@ html:not([data-scroll='0'])
 	width: 100%
 	z-index: 5
 	background-color: transparent
-	transition: background-color 0.5s ease
 
 .navbar
 	height: $nav-height
@@ -88,18 +87,18 @@ html:not([data-scroll='0'])
 /*******msg linea*********/
 
 .container-msg
-	width: 51vw
-	height: 21vw
-	max-width: 400px
+	width: 45vw
+	height: 45vw
+	max-width: 500px
 	position: absolute
 	top: 100px
 	right: 8vw
 	padding: 30px
-	background: #fff
+	background: #ccc
 	display: flex
 	justify-content: center
 	align-items: center
-	border-radius: 35px
+	border-radius: 30vw
 	border: 7px solid #0abab5
 
 .msg
@@ -116,26 +115,23 @@ html:not([data-scroll='0'])
 /*******smartphone********/
 
 .smartphone-div
-	width: 100vw
-	border: 3px dashed red
 	position: relative
-	left: 10vw
-	top: 300px
+	left: 50vw
+	top: calc(50vh + 50px)
+	transform: translate(-50%, -50%)
 	height: 320px
-	width: 18vw
+	width: 80%
 	max-width: 200px
 	min-width: 90px
 	display: flex
 	align-items: center
+	@media (min-width: 480px)
+		left: 10vw
 
 	.smartphone
 		width: 100%
 		position: absolute
-		top: -1%
-		margin-left: auto
-		margin-right: auto
 		left: 0
-		right: 0
 		z-index: 4
 	.screenshot
 		width: 94%
