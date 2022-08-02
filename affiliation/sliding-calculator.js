@@ -34,7 +34,6 @@ function autentica_calc(){
 
     var result2 = 0
 
-
     result = ((s1*10) + (s1*s2*0.5) + (s1*s2*s3*1) + (s1*s2*s3*s4*1.5) + (s1*s2*s3*s4*s5*2))
     result2 = (s1*(monthly/50)) + (s1*s2*(monthly/100)) + (s1*s2*s3*(monthly/100)) + (s1*s2*s3*s4*(monthly/100)) + (s1*s2*s3*s4*s5*(monthly/50))
 
@@ -52,3 +51,7 @@ function autentica_calc(){
 
 
 autentica_calc()
+
+
+
+/******1a definizione poi su call( autentica_calc()) def_var() assegna_var()**********/

@@ -1,65 +1,65 @@
 @import './affiliation/_sliding-calculator.css'
 
-$genuinyCol: #0ABBB5
+$genuinyCol: #0abab5
 
 $layout-breakpoint-small: 480px
 
+$nav-height: 9%
 
-body
+
+body, .navbar-brand
 	box-sizing: border-box
 	font-family: Helvetica, Opens-sans, sans-serif
 	font-size: 1.8rem
+
+body, .navbar-brand
+	box-sizing: border-box
 	margin: 0
-	padding: 0	
+	padding: 0
 
 html
 	font-size: 62.5%
 
 
 html:not([data-scroll='0']) 
-	.navbar
+	.container-navbar
 		box-shadow: 0px 4px 6px 1px rgba(0,0,0,.3)
 
-.navbar
-	display: flex
-	flex-wrap: wrap
-	column-gap: 25px
 
-	padding: 10px 30px
-	width: 100%
+.container-navbar
 	position: fixed
-	top: 0px
+	display: flex
+	justify-content: center
+	top: 0
+	height: $nav-height
+	min-height: 40px
+	width: 100%
 	z-index: 5
 	background-color: $genuinyCol
+
+.navbar
+	background-color: $genuinyCol
+	height: $nav-height
+	min-height: 40px
+	width: 100%
+	max-width: 1600px
+	padding: 0 5%
+	position: fixed
+	top: 0px
+	z-index: 6
 	color: white
 	transition: 0.2s
 
-	h1
-		font-size: 4rem
-		margin: 0
-		@media (max-width: $layout-breakpoint-small)
-			font-size: 8vw
-
 	.navbar-brand img
-		max-width: 40px
+		width: 60vw
+		max-width: 300px
 		padding: 0
-	.navbar-brand h1
-		color: white
-
-/******nav tabs******/
-
-.navbar
-	min-width: 324px
-	min-height: 74.25px
-
-.navbar-nav
-	display: flex
-	column-gap: 10px
 
 
 /******nav dropdown**/
 
 .navbar-toggler
+	margin-left: 20px
 	border: none
 
 .navbar-toggler-icon
@@ -95,12 +95,12 @@ html:not([data-scroll='0'])
 	justify-content: center
 	align-items: center
 	border-radius: 35px
-	border: 7px solid #0abbb5
+	border: 7px solid #0abab5
 
 .msg
-	font-size: 7vw
+	font-size: 3vw
 	font-weight: bold
-	background: linear-gradient(to bottom, #0abbb5, #87FDF9)
+	background: linear-gradient(to bottom, #0abab5, #87FDF9)
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
 	line-height: .77
@@ -110,59 +110,50 @@ html:not([data-scroll='0'])
 
 /*******smartphone********/
 
-.wave-smartphone
-	position: absolute
-	top: 72.25px
+.smartphone-div
 	width: 100vw
+	border: 3px dashed red
+	position: relative
+	left: 10vw
+	top: 300px
+	height: 320px
+	width: 18vw
+	max-width: 200px
+	min-width: 90px
+	display: flex
+	align-items: center
 
-	#wave-top
+	.smartphone
+		width: 100%
 		position: absolute
-		background: linear-gradient(180deg, rgba(10,187,181,1) 10%, rgba(20,207,201,0.2) 100%)
-		color: white
-		z-index: -1
-	.smartphone-div
-		border: 3px dashed red
-		position: relative
-		left: 10vw
-		top: 30px
-		height: 320px
-		width: 18vw
-		max-width: 200px
-		min-width: 90px
-		display: flex
-		align-items: center
-
-		.smartphone
-			width: 100%
-			position: absolute
-			top: -1%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-			z-index: 4
-		.screenshot
-			width: 94%
-			z-index: 3
-			border-radius: 0 0 15px 15px
-			position: absolute
-			top: 0
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-		.filler
-			background-color: white
-			z-index: 2
-			width: 92%
-			height: 22px
-			border-radius: 20px 20px 0 0
-			position: absolute
-			top: -1%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
+		top: -1%
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
+		z-index: 4
+	.screenshot
+		width: 94%
+		z-index: 3
+		border-radius: 0 0 15px 15px
+		position: absolute
+		top: 0
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
+	.filler
+		background-color: white
+		z-index: 2
+		width: 92%
+		height: 22px
+		border-radius: 20px 20px 0 0
+		position: absolute
+		top: -1%
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
 
 
 #video-tedex
