@@ -102,7 +102,7 @@ html:not([data-scroll='0'])
 
 	/** showing**/
 	.show
-	width: 100%	
+		width: 100%	
 
 	.nav-link
 		color: $genuinyCol
@@ -114,6 +114,21 @@ html:not([data-scroll='0'])
 		margin: 5px
 
 
+.container
+	width: 100%
+	padding: 20vh 5% 0 5%
+	box-sizing: border-box
+	max-width: 2000px
+
+	.container-phone
+		background-color: #ccc
+			/***80vh+20vhfrom parent container get a full page*/
+			/*so content doesn't collide with navbar
+			/*there's a cap to contain elements in big monitors according to parent container**/
+		height: 80vh
+		max-height: 800px
+
+
 /*******smartphone********/
 
 /**.smartphone-bg
@@ -121,8 +136,8 @@ html:not([data-scroll='0'])
 
 .smartphone-div
 	position: relative
-	left: 50vw
-	top: calc(50vh + 50px)
+	left: 50%
+	top: calc(50% + 50px)
 	transform: translate(-50%, -50%)
 	height: 320px
 	width: 80%
@@ -131,8 +146,7 @@ html:not([data-scroll='0'])
 	display: flex
 	align-items: center
 	@media (min-width: 480px)
-		left: 15vw		
-		transform: translate(0%, -50%)
+		left: 15%		
 
 
 	.smartphone
@@ -140,39 +154,11 @@ html:not([data-scroll='0'])
 		position: absolute
 		left: 0
 		z-index: 4
-	.screenshot
-		width: 94%
-		z-index: 3
-		border-radius: 0 0 15px 15px
-		position: absolute
-		top: 0
-		margin-left: auto
-		margin-right: auto
-		left: 0
-		right: 0
-	.filler
-		background-color: white
-		z-index: 2
-		width: 92%
-		height: 22px
-		border-radius: 20px 20px 0 0
-		position: absolute
-		top: -1%
-		margin-left: auto
-		margin-right: auto
-		left: 0
-		right: 0
 
 
 #video-tedex
 	width: 20vw
 	height: 16/9*20vw
-
-.container
-	width: 100%
-	padding: 5%
-	box-sizing: border-box
-	max-width: 2000px
 
 .card-side
 	max-width: 100%
@@ -185,8 +171,7 @@ html:not([data-scroll='0'])
 	margin-top: 40px
 	border-style: none
 	background-color: transparent
-	&:first-of-type
-		margin-top: 400px
+
 
 
 .side-content
@@ -209,7 +194,6 @@ html:not([data-scroll='0'])
 /**************SUBSCRIBE***************/
 
 .title
-	margin-top: 300px
 	padding: 4rem
 
 
