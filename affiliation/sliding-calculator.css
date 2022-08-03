@@ -81,11 +81,11 @@ body{
 h2.info {
     text-transform: capitalize;
     margin: 0 auto 15px 20px;
-    font-size: calc(1.325rem + .9vw)
+    font-size: calc(1.2rem + .9vw)
 }
 
 .box-info{
-    padding: 2.2vw 2.2vw 30px 2.2vw;
+    padding: 1vw 2.2vw 30px 2.2vw;
 }
 
 .box-info p{
@@ -136,17 +136,13 @@ input{
     width: 30%;
 }
 
-.table-multiplier{
-    background-color: #0abab5;
-    color: white;
-    font-weight: bold;
-}
 
 
 .table-container{
     margin: 100px auto;
     width: 95vw;
     max-width: 1200px;
+    outline: 4px dotted red;
 }
 
 .table{

@@ -32,7 +32,7 @@
 
 	<header>
 		<!-----navbar flex------>
-		<div class="container-navbar">
+		<div class="container-navbar container-navbar-white">
 			<nav class="navbar navbar-expand-lg">
 				<a class="navbar-brand" href="index.html"><img class="white" src="images/svg-logo-ethical.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,7 +100,7 @@
 						<div class="calculator_row_monthly">
 								<label for="tip">Rendita media<span class="tip-amount"></span></label>
 								<input type="range" min="5" max="30" value="5" step="5" id="tip_monthly" required/>
-								<p class="monthly" id="slider-value-montlhy"></p>
+								<p class="monthly"></p>
 						</div>
 
 
@@ -149,7 +149,7 @@
 			</div>
 
 			<div class="table-container">
-				<table class="table table-striped acnhor" id="table-autentica">
+				<table class="table table-striped anchor" id="table-autentica">
 				  <tr>
 				    <th>Livello</th>
 				    <th>Numero utenti</th>
@@ -160,70 +160,69 @@
 				  </tr>
 				  <tr>
 				    <td>1°</td>
-				    <td>10</td>
-				    <td>10€</td>
-				    <th>100€</th>
+				    <td id="tab1_m1"></td>
+				    <td>10 €</td>
+				    <td id="tab1_p1">100€</td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-2">x10</td>
+				    <td id="tab1_m2"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>2°</td>
-				    <td>100</td>
-				    <td>0,5€</td>
-				    <th>50</th>
+				    <td id="tab1_u2"></td>
+				    <td>0,5 €</td>
+				    <td id="tab1_p2">50€</td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-3">x5</td>
+				    <td id="tab1_m3"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>3°</td>
-				    <td>500</td>
-				    <td>1€</td>
-				    <th>500€</th>
+				    <td id="tab1_u3"></td>
+				    <td>1 €</td>
+				    <td id="tab1_p3">500€</td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-4">x6</td>
+				    <td id="tab1_m4"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>4°</td>
-				    <td>3'000</td>
-				    <td>1,5€</td>
-				    <th>4'500€</th>
+				    <td id="tab1_u4"></td>
+				    <td>1,5 €</td>
+				    <td id="tab1_p4">4'500€</td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-5">x7</td>
+				    <td id="tab1_m5"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>5°</td>
-				    <td>21'000</td>
-				    <td>2€</td>
-				    <th>42'000€</th>
+				    <td id="tab1_u5"></td>
+				    <td>2 €</td>
+				    <td id="tab1_p5">42'000€</td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td>Totale utenti:<br>
-				    24'610</td>
+				    <td>Totale utenti:<br><span id="tab1_u12345"></span></td>
 				    <td></td>
-				    <th>Totale premio:<br><span class="autentica_result"></span><br></th>
+				    <td>Totale premio:<br><span class="autentica_result"></span><br></td>
 				  </tr>
 				</table>
 			</div>
 
 			<div class="table-container">
-				<table class="table anchor table-striped" id="table-rendita">
+				<table class="table table-striped anchor" id="table-rendita">
 				  <tr>
 				    <th>Livello</th>
 				    <th>Numero utenti</th>
@@ -234,63 +233,63 @@
 				  </tr>
 				  <tr>
 				    <td>1°</td>
-				    <td>s1</td>
-				    <td>2%</td>
-				    <th>s1*10 + €</th>
+				    <td id="tab2_m1"></td>
+				    <td>2% <span class="monthly"></span></td>
+				    <td id="tab2_p1"></td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-2">x3</td>
+				    <td id="tab2_m2"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>2°</td>
-				    <td>s1*s2</td>
-				    <td>1%</td>
-				    <th>s1*s2*0,5 + €</th>
+				    <td id="tab2_u2"></td>
+				    <td>%1 <span class="monthly"></span></td>
+				    <td id="tab2_p2"></td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-3">x2</td>
+				    <td id="tab2_m3"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>3°</td>
-				    <td>s1*s2*s3</td>
-				    <td>1%</td>
-				    <th>s1*s2*s3*1 + €</th>
+				    <td id="tab2_u3"></td>
+				    <td>1% <span class="monthly"></span></td>
+				    <td id="tab2_p3"></td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-4">x2</td>
+				    <td id="tab2_m4"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>4°</td>
-				    <td>s1*s2*s3*s4</td>
-				    <td>1%</td>
-				    <th>s1*s2*s3*s4*1,5 + €</th>
+				    <td id="tab2_u4"></td>
+				    <td>1% <span class="monthly"></span></td>
+				    <td id="tab2_p4"></td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td class="table-multiplier slider-value-5">x2</td>
+				    <td id="tab2_m5"></td>
 				    <td></td>
-				    <th></th>
+				    <td></td>
 				  </tr>
 				  <tr>
 				    <td>5°</td>
-				    <td>s1*s2*s3*s4*s5</td>
-				    <td>2%</td>
-				    <th>s1*s2*s3*s4*s5*2 + €</th>
+				    <td id="tab2_u5"></td>
+				    <td>2% <span class="monthly"></span></td>
+				    <td id="tab2_p5"></td>
 				  </tr>
 				  <tr>
 				    <td></td>
-				    <td>Totale utenti:</td>
+				    <td>Totale utenti:<br><span id="tab2_u12345"></span></td>
 				    <td></td>
-				    <th>Totale premio:<br><span class="rendita_result"></span><br></th>
+				    <td>Totale premio:<br><span class="rendita_result"></span><br></td>
 				  </tr>
 				</table>
 			</div>
