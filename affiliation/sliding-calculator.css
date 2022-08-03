@@ -1,12 +1,3 @@
-
-body{
-
-}
-
-.p-ft{
-    padding: 5px 3vw;
-}
-
 .title{
     padding-top: 2rem;
 }
@@ -85,7 +76,7 @@ h2.info {
 }
 
 .box-info{
-    padding: 1vw 2.2vw 30px 2.2vw;
+    margin: 4%;
 }
 
 .box-info p{
@@ -104,13 +95,13 @@ h2.info {
 
 
 .w3rcontainer{
-   border: 1px solid #cccfdb;
-   border-radius: 2px;
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
 } 
 .hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #0087ca;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
 }
 
 .hover-underline-animation:after{
@@ -142,9 +133,20 @@ input{
     margin: 100px auto;
     width: 95vw;
     max-width: 1200px;
-    outline: 4px dotted red;
 }
 
 .table{
     text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 1279px){
+    h2.info{
+        font-size: 2.8rem;
+    }
+    .box-info p{
+        font-size: 2rem;
+    }
 }

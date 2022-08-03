@@ -119,10 +119,20 @@ function tab_value_update(){
 
 /**last column**/
     document.getElementById("tab1_p1").innerHTML = format_prize(l1_a)
+    document.getElementById("tab2_p1").innerHTML = format_prize(l1_r)
+
     document.getElementById("tab1_p2").innerHTML = format_prize(l2_a)
+    document.getElementById("tab2_p2").innerHTML = format_prize(l2_r)
+
     document.getElementById("tab1_p3").innerHTML = format_prize(l3_a)
+    document.getElementById("tab2_p3").innerHTML = format_prize(l3_r)
+
     document.getElementById("tab1_p4").innerHTML = format_prize(l4_a)
+    document.getElementById("tab2_p4").innerHTML = format_prize(l4_r)
+
     document.getElementById("tab1_p5").innerHTML = format_prize(l5_a)
+    document.getElementById("tab2_p5").innerHTML = format_prize(l5_r)
+
 }
 
 

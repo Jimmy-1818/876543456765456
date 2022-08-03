@@ -12,7 +12,7 @@ body, .navbar-brand
 	font-family: Helvetica, Opens-sans, sans-serif
 	font-size: 1.8rem
 
-body, .navbar-brand
+body, .navbar-brand, p
 	box-sizing: border-box
 	margin: 0
 	padding: 0
@@ -96,8 +96,14 @@ html:not([data-scroll='0'])
 	height: 2.5rem
 
 .navbar-collapse
+	width: 100%
 	text-align: center
-	
+	padding: 20px 0 13px 0
+
+	/** showing**/
+	.show
+	width: 100%	
+
 	.nav-link
 		color: $genuinyCol
 		padding: 0
@@ -163,9 +169,10 @@ html:not([data-scroll='0'])
 	height: 16/9*20vw
 
 .container
-	margin-top: 68px
+	width: 100%
+	padding: 5%
+	box-sizing: border-box
 	max-width: 2000px
-	padding: 5vw
 
 .card-side
 	max-width: 100%
@@ -202,7 +209,8 @@ html:not([data-scroll='0'])
 /**************SUBSCRIBE***************/
 
 .title
-	padding: 7rem 0
+	margin-top: 300px
+	padding: 4rem
 
 
 ol:first-child
