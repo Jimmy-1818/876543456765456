@@ -72,7 +72,7 @@
 
 h2.info {
     text-transform: capitalize;
-    margin: 0 auto 3% 20px;
+    margin: 0 auto 3% 4%;
     font-size: calc(1.2rem + .9vw);
 }
 
@@ -124,8 +124,9 @@ h2.info {
 }
 
 
-input{
+.calculator_row_monthly input{
     width: 30%;
+    margin-left: 4%;
 }
 
 
@@ -153,3 +154,34 @@ input{
         font-size: 2rem;
     }
 }
+
+/*Chrome slider color change*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        overflow: hidden;
+        max-width: 600px;
+        -webkit-appearance: none;
+        background-color: #ccc;
+        border-radius: 10px;
+            
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        border-radius: 10px !important;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+        width: 10px;
+        height: 10px;
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 50%;
+        cursor: ew-resize;
+        background: black;
+        box-shadow: -405px 0px 0px 400px #0abbb5;
+    }
+
+}
+

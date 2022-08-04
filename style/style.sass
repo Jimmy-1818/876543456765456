@@ -116,16 +116,17 @@ html:not([data-scroll='0'])
 
 .container
 	width: 100%
-	padding: 20vh 5% 0 5%
+	padding: 9vh 5% 0 5%
 	box-sizing: border-box
 	max-width: 2000px
 
 	.container-phone
-			/***80vh+20vhfrom parent container get a full page*/
-			/*so content doesn't collide with navbar
-			/*there's a cap to contain elements in big monitors according to parent container**/
-		height: 80vh
+			/**for tall and narrow screens: object width% container**/
+		border: dashed 4px red
+		height: 100vh
 		max-height: 800px
+		@media (min-width: 480px)
+			height: 91vh
 
 
 /*******smartphone********/
@@ -134,33 +135,18 @@ html:not([data-scroll='0'])
 	background-color: #ccc**/
 
 .smartphone
+	/**mobile first**/
 	position: relative
 	left: 50%
-	top: 45%
-	width: 50%
+	top: 50%
 	transform: translate(-50%, -50%)
-	max-width: 700px
-	min-width: 90px
+	width: 55%
 	@media (min-width: 480px)
-		left: 6%
-		transform: translate(0%, -50%)
-		width: 27%
-		max-width: 30vh
-
-.foo 
-	position: relative
-	transform-origin: 0 100%
-
-.foo::after 
-	position: absolute
-	top: 100%
-	left: 0
-	width: 5px
-	height: 5px
-	content: ''
-	background-color: #f0f
-	border-radius: 50%
-	transform: translate(-50%, -50%)
+		left: 4%
+		width: 23%
+		top: 10%
+		transform: translate(0%, 0%)
+		max-width: 285px
 
 
 	.smartphone
