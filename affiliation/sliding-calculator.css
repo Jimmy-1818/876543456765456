@@ -54,7 +54,7 @@
 }
 
 .calculator_row_monthly label{
-    font-size: calc(1.4rem + .8vw);
+    font-size: calc(1.4rem + 80%);
     margin-left: 10%;
 }
 
@@ -144,6 +144,28 @@ h2.info {
 .multiplier{
     color: red;
 }
+
+
+
+
+
+
+.table-grid{
+    width: 80%;
+    margin: 0 auto;
+    outline: 3px dashed red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px;
+    grid-template-rows: 80px repeat(8, 20px);
+
+}
+
+.teble-item:nth-child(1-4){
+    background: #ccc;
+}
+
+
 
 
 @media screen and (min-width: 1279px){

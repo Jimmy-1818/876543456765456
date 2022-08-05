@@ -1,0 +1,14 @@
+.table-grid{
+    width: 80%;
+    margin: 0 auto;
+    outline: 3px dashed red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px;
+    grid-template-rows: 80px repeat(8, 20px);
+
+}
+
+.teble-item:nth-child(1n){
+    background: #ccc;
+}

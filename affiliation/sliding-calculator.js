@@ -1,12 +1,12 @@
 
 /****Run everything on every change in one of the input through autentica_cacl()**/
 
-document.getElementById("tip_monthly").addEventListener("change", autentica_calc);
-document.getElementById("tip1").addEventListener("change", autentica_calc);
-document.getElementById("tip2").addEventListener("change", autentica_calc);
-document.getElementById("tip3").addEventListener("change", autentica_calc);
-document.getElementById("tip4").addEventListener("change", autentica_calc);
-document.getElementById("tip5").addEventListener("change", autentica_calc);
+document.getElementById("tip_monthly").addEventListener("change", affiliation_cacl);
+document.getElementById("tip1").addEventListener("change", affiliation_cacl);
+document.getElementById("tip2").addEventListener("change", affiliation_cacl);
+document.getElementById("tip3").addEventListener("change", affiliation_cacl);
+document.getElementById("tip4").addEventListener("change", affiliation_cacl);
+document.getElementById("tip5").addEventListener("change", affiliation_cacl);
 
 
 var monthly = 0
@@ -136,7 +136,7 @@ function tab_value_update(){
 }
 
 
-function autentica_calc(){
+function affiliation_cacl(){
     vars_def()
     slider_value_update()
     tab_value_update()
@@ -151,4 +151,4 @@ function autentica_calc(){
 }
 
 
-autentica_calc()
+affiliation_cacl()
