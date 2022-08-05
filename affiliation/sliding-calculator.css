@@ -129,7 +129,7 @@ h2.info {
 }
 
 .table-container{
-    margin: 100px auto;
+    margin: 100px auto 15px auto;
     width: 95vw;
     max-width: 1200px;
 }
@@ -162,7 +162,32 @@ h2.info {
     background: #ccc;
 }
 
+.back-on-calculator-container{
+    position: relative;
+}
 
+
+
+.back-on-calculator{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgba(10, 181, 187, 0.4);
+    position: absolte;
+    position: sticky;
+    padding: 14px;   
+    margin: 0 10px 2000px auto;
+
+}
+
+.back-on-calculator img{
+    width: 100%;
+    opacity: 0.5;
+    position: relative;
+    transform: translate(-50%, -60%);
+    top: 50%;
+    left: 50%;
+}
 
 
 @media screen and (min-width: 1279px){
@@ -171,6 +196,12 @@ h2.info {
     }
     .box-info p{
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .back-on-calculator{
+        visibility: hidden;
     }
 }
 
