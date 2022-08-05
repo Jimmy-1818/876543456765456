@@ -79,9 +79,6 @@ h2.info {
     font-size: calc(1rem + 0.5vw);
 }
 
-.rendita{
-    padding-right: 1vw;
-}
 
 .result__row{
     display: flex;
