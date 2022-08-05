@@ -3,12 +3,27 @@
     margin: 0 auto;
     outline: 3px dashed red;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr 1fr 2fr;
     grid-template-rows: 20px;
-    grid-template-rows: 80px repeat(8, 20px);
+    grid-template-rows: 50px repeat(4, 30px 20px) 30px;
 
 }
 
-.teble-item:nth-child(1n){
-    background: #ccc;
+.table-item{
+    outline: 1px dotted red;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.table-multiplier{
+    font-size: 0.8em;
+}
+
+
+.table-item:nth-child(1), .table-item:nth-child(2), .table-item:nth-child(3), .table-item:nth-child(4){
+    height: 100%;
+    width: 100%;
+    align-self: end;
+    background-color: orange;
 }
