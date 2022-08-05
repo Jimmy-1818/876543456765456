@@ -18,12 +18,16 @@
 
 .table-multiplier{
     font-size: 0.8em;
+    background-color: #0abbb5;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 
 .table-item:nth-child(1), .table-item:nth-child(2), .table-item:nth-child(3), .table-item:nth-child(4){
     height: 100%;
     width: 100%;
-    align-self: end;
     background-color: orange;
 }
