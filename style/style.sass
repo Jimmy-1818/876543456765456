@@ -68,8 +68,6 @@ html:not([data-scroll='0'])
 		top: -300px
 		.navbar
 			top: -300px
-	.nav
-
 
 .container-navbar-slide
 	@extend .container-navbar
@@ -165,14 +163,18 @@ html:not([data-scroll='0'])
 	grid-row-gap: 30px
 	@media (min 768px)
 		grid-template-columns: 7fr 3fr
-		grid-column-gap: 20px
+	grid-column: 1
+	text-align: justify
+	@media (min-width: 480px)
+		text-align: left
+	h1
+		padding: 3rem 0 1rem 0
 
 .card
 	font-size: 1.7rem
 	border: none
-	grid-column: 1
-	h1
-		padding: 3rem 0 1rem 0
+
+
 .card:last-of-type
 	padding-bottom: 9rem
 
@@ -191,9 +193,28 @@ html:not([data-scroll='0'])
 .title
 	padding: 8rem 0 2rem 0
 
+ul.subscribe-steps
+	margin: 0
+	padding: 0
 
-ol:first-child
-	margin-top: 140px
+ul.subscribe-steps li
+	padding: 25px 0
 
-ol li
-	padding: 50px 0
+	padding-left: 40px
+	list-style: none
+	background-repeat: no-repeat
+	background-position: left center
+	background-size: 20px
+	font-size: calc(1.4rem + 0.4vw)
+
+
+.subscribe-step-1
+	background-image: url('../images/icons/add-user.png')
+.subscribe-step-2
+	background-image: url('../images/icons/e-mail.png')
+.subscribe-step-3
+	background-image: url('../images/icons/download.png')
+.subscribe-step-4
+	background-image: url('../images/icons/verified.png')
+.subscribe-step-5
+	background-image: url('../images/icons/add-group.png')
