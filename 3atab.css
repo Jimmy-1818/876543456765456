@@ -63,6 +63,7 @@
 
 .first-row{
     border-top: 3px solid #0abbb5;
+    border-bottom: 1px solid #cbcbcb;
 }
 .last-row{
     border-bottom: 3px solid #0abbb5 !important;
