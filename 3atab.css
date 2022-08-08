@@ -17,22 +17,22 @@
 }
 
 .table-item:nth-child(8n+9){
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     border-top: 1px solid #cbcbcb;
     border-bottom: 1px solid #cbcbcb;
 }
 .table-item:nth-child(8n+10){
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     border-top: 1px solid #cbcbcb;
     border-bottom: 1px solid #cbcbcb;
 }
 .table-item:nth-child(8n+11){
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     border-top: 1px solid #cbcbcb;
     border-bottom: 1px solid #cbcbcb;
 }
 .table-item:nth-child(8n+12){
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     border-top: 1px solid #cbcbcb;
     border-bottom: 1px solid #cbcbcb;
 }
@@ -53,7 +53,7 @@
 
 
 .first-row, .last-row{
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
     align-content: center;
     justify-content: center;
     padding-top: 7px;
@@ -77,8 +77,8 @@
 .autentica-table-title, .rendita-table-title {
     text-align: center;
     background: #0abbb53d;
-    width: 100px;
-    height: 50px;
+    width: 170px;
+    height: 30px;
     margin: 0 auto;
     border-radius: 15px 15px 0 0;
     border-top: 3px solid #0abbb5;
