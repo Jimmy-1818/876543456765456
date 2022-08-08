@@ -72,7 +72,7 @@ function slider_value_update(){
 
     var monthly_s = document.getElementsByClassName("monthly") 
     for (var i = 0; i < monthly_s.length; i++){
-    document.getElementsByClassName("monthly")[i].innerHTML = monthly + " €"
+    document.getElementsByClassName("monthly")[i].innerHTML =' ' + monthly + " €"
     }
 
     document.getElementById("slider-value-1").innerHTML = "x "+ s1
@@ -85,16 +85,32 @@ function slider_value_update(){
 function tab_value_update(){
 /**odd lines first column (no 1st)**/
     document.getElementById("tab1_m1").innerHTML = s1
+    document.getElementById("tab2_m1").innerHTML = s1
+
     document.getElementById("tab1_m2").innerHTML = 'x'+s2
+    document.getElementById("tab2_m2").innerHTML = 'x'+s2
+
     document.getElementById("tab1_m3").innerHTML = 'x'+s3
+    document.getElementById("tab2_m3").innerHTML = 'x'+s3
+
     document.getElementById("tab1_m4").innerHTML = 'x'+s4
+    document.getElementById("tab2_m4").innerHTML = 'x'+s4
+
     document.getElementById("tab1_m5").innerHTML = 'x'+s5
+    document.getElementById("tab2_m5").innerHTML = 'x'+s5
 
 /**event lines first column (no 2nd line)**/
     document.getElementById("tab1_u2").innerHTML = format_user(s1*s2)
+    document.getElementById("tab2_u2").innerHTML = format_user(s1*s2)
+
     document.getElementById("tab1_u3").innerHTML = format_user(s1*s2*s3)
+    document.getElementById("tab2_u3").innerHTML = format_user(s1*s2*s3)
+
     document.getElementById("tab1_u4").innerHTML = format_user(s1*s2*s3*s4)
+    document.getElementById("tab2_u4").innerHTML = format_user(s1*s2*s3*s4)
+
     document.getElementById("tab1_u5").innerHTML = format_user(s1*s2*s3*s4*s5)
+    document.getElementById("tab2_u5").innerHTML = format_user(s1*s2*s3*s4*s5)
 
 /**bottom line**/
     var tot_utenti = Number(s1) + Number(s1*s2) + Number(s1*s2*s3) + Number(s1*s2*s3*s4) + Number(s1*s2*s3*s4*s5)
