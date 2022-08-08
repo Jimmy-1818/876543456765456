@@ -121,16 +121,103 @@ h2.info {
     margin-left: 4%;
 }
 
-/***anchor adjust***/
 
-#table-autentica{
-    position: relative;
-    top: -130px;
+.table-grid{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 60px repeat(4, 30px 30px) 30px 55px;
+    margin: 0 auto 40px auto;
+    width: 95%;
+    max-width: 1200px;
 }
 
-#table-rendita{
-    position: relative;
-    top: -130px;
+
+.table-item{
+    align-content: center;  /**va per il  verticale di tutti**/
+    text-align: center; /**va per l'orizzontale di tutti**/
+    line-height: 32px;
+}
+
+.table-item:nth-child(8n+9){
+    background-color: #f6f6f6;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-item:nth-child(8n+10){
+    background-color: #f6f6f6;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-item:nth-child(8n+11){
+    background-color: #f6f6f6;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-item:nth-child(8n+12){
+    background-color: #f6f6f6;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+
+.table-multiplier{
+    font-size: 0.8em;
+    background-color: #0abbb5 !important;
+    margin: 4px auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 60%;
+    color: white;
+    align-content: center;
+    line-height: 1.9; 
+}
+
+
+.first-row, .last-row{
+    background-color: #f6f6f6;
+    align-content: center;
+    justify-content: center;
+    padding-top: 7px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.first-row{
+    border-top: 3px solid #0abbb5;
+    border-bottom: 1px solid #cbcbcb;
+}
+.last-row{
+    border-bottom: 3px solid #0abbb5 !important;
+}
+
+.yellow_amount {
+    border-radius: 5px;
+    background-color: #ffff80;
+    border: 3px solid #ffff80;
+}
+
+.autentica-table-title, .rendita-table-title {
+    text-align: center;
+    background: #0abbb53d;
+    width: 14%;
+    min-width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 15px 15px 0 0;
+    border-top: 3px solid #0abbb5;
+    border-left: 3px solid #0abbb5;
+    border-right: 3px solid #0abbb5;
+    padding: 9px 10px 0 10px;
+}
+
+/***anchor adjust***/
+
+.tables{
+    margin: 130px 0;
+    font-size: calc(1rem + 0.6vw);
 }
 
 .table-container{
@@ -143,14 +230,10 @@ h2.info {
     text-align: center;
 }
 
-#table-rendita{
-    margin-top: 25px;
-}
 
 .tab-space{
     height: 100px;
 }
-
 
 
 .teble-item:nth-child(1-4){
@@ -161,7 +244,6 @@ h2.info {
     position: sticky;
     top: calc(100vh - 100px);
 }
-
 
 
 .back-on-calculator{
