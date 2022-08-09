@@ -1,12 +1,12 @@
 
 /****Run everything on every change in one of the input through autentica_cacl()**/
 
-document.getElementById("tip_monthly").addEventListener("change", affiliation_cacl);
-document.getElementById("tip1").addEventListener("change", affiliation_cacl);
-document.getElementById("tip2").addEventListener("change", affiliation_cacl);
-document.getElementById("tip3").addEventListener("change", affiliation_cacl);
-document.getElementById("tip4").addEventListener("change", affiliation_cacl);
-document.getElementById("tip5").addEventListener("change", affiliation_cacl);
+document.getElementById("tip_monthly").addEventListener("change", slider_change);
+document.getElementById("tip1").addEventListener("change", slider_change);
+document.getElementById("tip2").addEventListener("change", slider_change);
+document.getElementById("tip3").addEventListener("change", slider_change);
+document.getElementById("tip4").addEventListener("change", slider_change);
+document.getElementById("tip5").addEventListener("change", slider_change);
 
 
 var monthly = 0
@@ -136,7 +136,7 @@ function tab_value_update(){
 }
 
 
-function affiliation_cacl(){
+function slider_change(){
     vars_def()
     slider_value_update()
     tab_value_update()
@@ -151,4 +151,5 @@ function affiliation_cacl(){
 }
 
 
-affiliation_cacl()
+slider_change()
+document.getElementById("tip1").value.innerHTML = 2
