@@ -75,11 +75,11 @@ function slider_value_update(){
     document.getElementsByClassName("monthly")[i].innerHTML = monthly + " €"
     }
 
-    document.getElementById("slider-value-1").innerHTML = "x "+ s1
-    document.getElementById("slider-value-2").innerHTML = "x "+ s2
-    document.getElementById("slider-value-3").innerHTML = "x "+ s3
-    document.getElementById("slider-value-4").innerHTML = "x "+ s4
-    document.getElementById("slider-value-5").innerHTML = "x "+ s5
+    document.getElementById("slider-value-1").innerHTML = "x"+ s1
+    document.getElementById("slider-value-2").innerHTML = "x"+ s2
+    document.getElementById("slider-value-3").innerHTML = "x"+ s3
+    document.getElementById("slider-value-4").innerHTML = "x"+ s4
+    document.getElementById("slider-value-5").innerHTML = "x"+ s5
 }
 
 function tab_value_update(){
