@@ -134,7 +134,7 @@ h2.info {
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 20fr 1fr 20fr;
     grid-template-rows: 60px repeat(4, 30px 30px) 30px 55px;
     margin: 0 auto 40px auto;
     width: 95%;
@@ -168,7 +168,6 @@ h2.info {
     border-bottom: 1px solid #cbcbcb;
 }
 
-
 .table-multiplier{
     background-color: #0abbb5 !important;
     margin: 4px auto;
@@ -178,10 +177,10 @@ h2.info {
     font-size: 60%;
     color: white;
     align-content: center;
-    line-height: 2.2; 
+    line-height: 1.8; 
     box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 50%);
+    font-size: 1.18rem;
 }
-
 
 .first-row{
     border-bottom: 1px solid #cbcbcb;
@@ -225,13 +224,14 @@ h2.info {
     border-left: 3px solid #0abbb5;
     border-right: 3px solid #0abbb5;
     padding: 9px 10px 0 10px;
+    font-size: calc(1.325rem + 0.4vw);
 }
 
 /***anchor adjust***/
 
 .tables{
     margin: 0 auto 100px auto;
-    font-size: calc(1rem + 0.8vw);
+    font-size: calc(1.2rem + 0.7vw);
 }
 
 .table-container{
