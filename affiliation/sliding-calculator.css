@@ -95,6 +95,7 @@ h2.info {
     border-radius: 5px;
     margin-top: 1px;
     display: inline-block;
+    font-size: calc(2rem + 0.4vw);
 }
 
 .result__row{
@@ -143,7 +144,7 @@ h2.info {
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 65px 2fr;
+    grid-template-columns: 1fr 2fr minmax(65px,auto) 2fr;
     grid-template-rows: minmax(50px, auto) repeat(9, 30px) minmax(55px, auto);
     width: 95%;
     border-top: 3px solid #0abbb5;
@@ -227,7 +228,7 @@ h2.info {
 
 .autentica-table-title, .rendita-table-title {
     text-align: center;
-    background: #0abbb53d;
+    background: rgb(181 234 228);
     width: 25%;
     min-width: 160px;
     height: 42px;
