@@ -325,7 +325,7 @@ h2.info {
 
     .box-info{
         margin: 4%;
-        justify-content: left;
+        text-align: left;
     }
 
     .second-line{
