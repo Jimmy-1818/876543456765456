@@ -136,7 +136,7 @@ h2.info {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
-    grid-template-rows: minmax(50px, auto) repeat(9, 30px) 55px;
+    grid-template-rows: minmax(50px, auto) repeat(9, 30px) minmax(55px, auto);
     width: 95%;
     border-top: 3px solid #0abbb5;
 }
@@ -189,10 +189,9 @@ h2.info {
     background-color: #f6f6f6;
     align-content: center;
     justify-content: center;
-    font-weight: bold;
     line-height: 1.2;
     font-size: 0.8em;
-    padding: 6px 10px;
+    padding: 8px 10px;
 }
 
 .last-row{
@@ -231,6 +230,7 @@ h2.info {
     border-right: 3px solid #0abbb5;
     padding: 9px 10px 0 10px;
     font-size: calc(1.325rem + 0.4vw);
+    font-weight: bold;
 }
 
 .autentica-table-title{
@@ -239,8 +239,13 @@ h2.info {
 
 /***anchor adjust***/
 
+.anchor-adjust{
+    position: relative;
+    top: -200px;
+}
+
 .tables{
-    margin: 0 auto 100px auto;
+    margin: 0 auto 180px auto;
     font-size: calc(1.2rem + 0.7vw);
 }
 

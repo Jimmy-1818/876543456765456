@@ -43,6 +43,21 @@ function format_prize(number){
     return new Intl.NumberFormat("de-DE", { style: "currency", "currency":"EUR" }).format(number);
 }
 
+function reconstruct_branch(){
+    var input_s = document.getElementsByClassName("input")
+    var higher_not_0 = 0
+    for (let i = 0; i < input_s.length; i++){
+        if (document.getElementsByClassName("input")[i].value > 0){
+            higher_not_0 = i 
+        }
+    }
+    for (let i = 0; i <= higher_not_0; i++){
+        if (document.getElementsByClassName("input")[i].value == 0){
+            document.getElementsByClassName("input")[i].value = 1
+        }
+    }
+}
+
 function vars_def(){
     monthly = document.getElementById("tip_monthly").value
 
@@ -135,20 +150,6 @@ function tab_value_update(){
 
 }
 
-function reconstruct_branch(){
-    var input_s = document.getElementsByClassName("input")
-    for (let i = 0; i < input_s.length; i++){
-        higher_not_0 = 1
-        if (document.getElementsByClassName("input")[i].value > higher_not_0){
-            higher_not_0 = i
-        }
-        for (let i = 0; i < higher_not_0; i++){
-            if (document.getElementsByClassName("input")[i].value == 0){
-                document.getElementsByClassName("input")[i].value = 1
-            }
-        }
-    }
-}
 
 function on_slider_change(){
     reconstruct_branch()
