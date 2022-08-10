@@ -1,12 +1,12 @@
 
 /****Run everything on every change in one of the input through autentica_cacl()**/
 
-document.getElementById("tip_monthly").addEventListener("change", slider_change);
-document.getElementById("tip1").addEventListener("change", slider_change);
-document.getElementById("tip2").addEventListener("change", slider_change);
-document.getElementById("tip3").addEventListener("change", slider_change);
-document.getElementById("tip4").addEventListener("change", slider_change);
-document.getElementById("tip5").addEventListener("change", slider_change);
+document.getElementById("tip_monthly").addEventListener("change", on_slider_change);
+document.getElementById("tip1").addEventListener("change", on_slider_change);
+document.getElementById("tip2").addEventListener("change", on_slider_change);
+document.getElementById("tip3").addEventListener("change", on_slider_change);
+document.getElementById("tip4").addEventListener("change", on_slider_change);
+document.getElementById("tip5").addEventListener("change", on_slider_change);
 
 
 var monthly = 0
@@ -69,7 +69,7 @@ function vars_def(){
 
 
 function slider_value_update(){
-
+    /** + monthly tab**/
     var monthly_s = document.getElementsByClassName("monthly") 
     for (var i = 0; i < monthly_s.length; i++){
     document.getElementsByClassName("monthly")[i].innerHTML = monthly + " €"
@@ -135,8 +135,23 @@ function tab_value_update(){
 
 }
 
+function reconstruct_branch(){
+    var input_s = document.getElementsByClassName("input")
+    for (let i = 0; i < input_s.length; i++){
+        higher_not_0 = 0
+        if (document.getElementsByClassName("input")[i].value > higher_not_0){
+            higher_not_0 = i
+        }
+        for (let i = 0; i < higher_not_0; i++){
+            if (document.getElementsByClassName("input")[i].value == 0){
+                document.getElementsByClassName("input")[i].value = 1
+            }
+        }
+    }
+}
 
-function slider_change(){
+function on_slider_change(){
+    reconstruct_branch()
     vars_def()
     slider_value_update()
     tab_value_update()
@@ -147,9 +162,7 @@ function slider_change(){
 
     document.getElementsByClassName("rendita_result")[0].innerHTML = format_prize(result_r)
     document.getElementsByClassName("rendita_result")[1].innerHTML = format_prize(result_r)
-
 }
 
 
-slider_change()
-document.getElementById("tip1").value.innerHTML = 2
+on_slider_change()
