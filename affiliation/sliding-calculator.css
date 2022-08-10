@@ -143,7 +143,7 @@ h2.info {
 .table-item{
     align-content: center;  /**va per il  verticale di tutti**/
     text-align: center; /**va per l'orizzontale di tutti**/
-    line-height: 32px;
+    line-height: 30px;
 }
 
 .table-item:nth-child(8n+9){
