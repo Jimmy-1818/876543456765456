@@ -150,12 +150,11 @@ h2.info {
 
 
 .table-grid{
-    width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr minmax(65px,auto) 2fr;
     grid-template-rows: minmax(50px, auto) repeat(9, 30px) minmax(55px, auto);
-    width: 95%;
+    width: 100%;
     border-top: 3px solid #0abbb5;
 }
 
