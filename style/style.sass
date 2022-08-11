@@ -182,7 +182,6 @@ html:not([data-scroll='0'])
 	@media (min 768px)
 		grid-template-columns: 7fr 3fr
 	grid-column: 1
-	text-align: justify
 	@media (min-width: 480px)
 		text-align: left
 	h1
@@ -194,6 +193,11 @@ html:not([data-scroll='0'])
 	border: none
 	line-height: 1.35
 	background-color: transparent
+	text-align: justify
+	@media(min-width: 480px)
+		text-align: left
+	h1
+		text-align: left
 
 
 .card:last-of-type
