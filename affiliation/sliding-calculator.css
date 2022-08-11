@@ -235,7 +235,7 @@ h2.info {
     left: -3px;
 }
 
-.autentica-table-title, .rendita-table-title {
+.table-title{
     text-align: center;
     background: rgb(181 234 228);
     width: 25%;
@@ -251,15 +251,47 @@ h2.info {
     font-weight: bold;
 }
 
-.autentica-table-title{
+
+
+.table-title:first-of-type{
     margin-top: 200px;
 }
 
+.back-on-top{
+    position: relative;
+    bottom: 200px;
+    border-bottom: 3px solid #5abbb5;
+    border-top: none;
+    border-radius: 0 0 30px 30px;
+    min-width: 50px;
+    width: 50px;
+    height: 30px;
+    margin-top: 0;
+}
+
+.back-on-top:last-of-type{
+    bottom: 160px;
+}
+
+.back-on-top img{
+    width: 100%;
+    position: relative;
+    top: -11px;
+    height: 80%;
+}
+
+
+
 /***anchor adjust***/
 
-.anchor-adjust{
+.anchor-adjust-tab1{
     position: relative;
     top: -200px;
+}
+
+.anchor-adjust-calculator{
+    position: relative;
+    top: -160px;
 }
 
 .tables{

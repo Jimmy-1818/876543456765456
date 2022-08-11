@@ -4,11 +4,10 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1KHWXSW6M0"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-1KHWXSW6M0');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date())	
+		gtag('config', 'G-1KHWXSW6M0');
 	</script>
 
 	<meta charset="utf-8">
@@ -103,8 +102,8 @@
 					Prova il calcolatore e dai un'occhiata al potenziale della filiera dei contatti, sono riportati anche i valori dei premi per singolo utente evidenziati in giallo.</p>
 				<p></p>
 			</div>
-
-			<div class="wrapper" id="calculator">
+			<div class="wrapper">
+				<div class="anchor-adjust-calculator" id="calculator"></div>
 
 
 				<h1 class="wrapper__title">Calcolatore filiera</h1>
@@ -122,25 +121,25 @@
 								<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip1" required/>
 								<p id="slider-value-1"></p>
 						</div>
-							<div class="calculator__row">
-								<label for="tip">2° Livello<span class="tip-amount"></span></label>
-								<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip2" required/>
-								<p id="slider-value-2"></p>
+						<div class="calculator__row">
+							<label for="tip">2° Livello<span class="tip-amount"></span></label>
+							<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip2" required/>
+							<p id="slider-value-2"></p>
 						</div>
-							<div class="calculator__row">
-								<label for="tip">3° Livello<span class="tip-amount"></span></label>
-								<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip3" required/>
-								<p id="slider-value-3"></p>
+						<div class="calculator__row">
+							<label for="tip">3° Livello<span class="tip-amount"></span></label>
+							<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip3" required/>
+							<p id="slider-value-3"></p>
 						</div>
-							<div class="calculator__row">
-								<label for="tip">4° Livello<span class="tip-amount"></span></label>
-								<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip4" required/>
-								<p id="slider-value-4"></p>
+						<div class="calculator__row">
+							<label for="tip">4° Livello<span class="tip-amount"></span></label>
+							<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip4" required/>
+							<p id="slider-value-4"></p>
 						</div>
-							<div class="calculator__row">
-								<label for="tip">5° Livello<span class="tip-amount"></span></label>
-								<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip5" required/>
-								<p id="slider-value-5"></p>
+						<div class="calculator__row">
+							<label for="tip">5° Livello<span class="tip-amount"></span></label>
+							<input class="input calculator__tip" type="range" min="0" max="10" value="0" step="1" id="tip5" required/>
+							<p id="slider-value-5"></p>
 						</div>
 
 						<div class="result__row">
@@ -170,123 +169,126 @@
 				<p class="hover-underline-animation">Hover w3resource text to see the effect!</p>--->
 
 			<div class="table-container">
-				<div class="autentica-table-title">Premio Autentica</div>
-				<div class="anchor-adjust" id="table-autentica"></div>
+				<div class="table-title">Premio Autentica</div>
+				<div class="anchor-adjust-tab1" id="table-autentica"></div>
 				<div class="table-grid tables">
 				
-				    <div class="table-item first-row">Livello</div>
-				    <div class="table-item first-row">Numero utenti</div>
-				    <div class="table-item first-row">Premio per utente</div>
-				    <div class="table-item first-row">Premio per livello</div>
+					<div class="table-item first-row">Livello</div>
+					<div class="table-item first-row">Numero utenti</div>
+					<div class="table-item first-row">Premio per utente</div>
+					<div class="table-item first-row">Premio per livello</div>
 
-				    <div class="table-item">1°</div>
-				    <div class="table-item"id="tab1_m1"></div>
-				    <div class="table-item"><span class="yellow_amount">10 €</span></div>
-				    <div class="table-item"id="tab1_p1"></div>
+					<div class="table-item">1°</div>
+					<div class="table-item"id="tab1_m1"></div>
+					<div class="table-item"><span class="yellow_amount">10 €</span></div>
+					<div class="table-item"id="tab1_p1"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab1_m2"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab1_m2"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">2°</div>
-				    <div class="table-item"id="tab1_u2"></div>
-				    <div class="table-item"><span class="yellow_amount">0,50 €</span></div>
-				    <div class="table-item"id="tab1_p2"></div>
+					<div class="table-item">2°</div>
+					<div class="table-item"id="tab1_u2"></div>
+					<div class="table-item"><span class="yellow_amount">0,50 €</span></div>
+					<div class="table-item"id="tab1_p2"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab1_m3"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab1_m3"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">3°</div>
-				    <div class="table-item"id="tab1_u3"></div>
-				    <div class="table-item"><span class="yellow_amount">1 €</span></div>
-				    <div class="table-item"id="tab1_p3"></div>
+					<div class="table-item">3°</div>
+					<div class="table-item"id="tab1_u3"></div>
+					<div class="table-item"><span class="yellow_amount">1 €</span></div>
+					<div class="table-item"id="tab1_p3"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab1_m4"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab1_m4"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">4°</div>
-				    <div class="table-item"id="tab1_u4"></div>
-				    <div class="table-item"><span class="yellow_amount">1,50 €</span></div>
-				    <div class="table-item"id="tab1_p4"></div>
+					<div class="table-item">4°</div>
+					<div class="table-item"id="tab1_u4"></div>
+					<div class="table-item"><span class="yellow_amount">1,50 €</span></div>
+					<div class="table-item"id="tab1_p4"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab1_m5"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab1_m5"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">5°</div>
-				    <div class="table-item"id="tab1_u5"></div>
-				    <div class="table-item"><span class="yellow_amount">2 €</span></div>
-				    <div class="table-item"id="tab1_p5"></div>
+					<div class="table-item">5°</div>
+					<div class="table-item"id="tab1_u5"></div>
+					<div class="table-item"><span class="yellow_amount">2 €</span></div>
+					<div class="table-item"id="tab1_p5"></div>
 
-				    <div class="table-item last-row"></div>
-				    <div class="table-item last-row">Totale utenti:<br><span id="tab1_u12345"></span></div>
-				    <div class="table-item last-row"></div>
-			    	<div class="table-item last-row">Totale premio:<br><span class="autentica_result"></span><br></div>
+					<div class="table-item last-row"></div>
+					<div class="table-item last-row">Totale utenti:<br><span id="tab1_u12345"></span></div>
+					<div class="table-item last-row"></div>
+					<div class="table-item last-row">Totale premio:<br><span class="autentica_result"></span><br></div>
 				</div>
+				<div class="table-title back-on-top"><a href="#calculator"><img src="images/up-icon.png" alt="back on top icon"></a></div>
 
-				<div class="autentica-table-title" id="table-rendita">Premio Rendita</div>
+				<div class="table-title" id="table-rendita">Premio Rendita</div>
 				<div class="table-grid tables">
-				    <div class="table-item first-row"><span>Livello</span></div>
-				    <div class="table-item first-row"><span>Numero utenti</span></div>
-				    <div class="table-item first-row"><span>Premio per utente</span></div>
-				    <div class="table-item first-row"><span>Premio per livello</span></div>
+					<div class="table-item first-row"><span>Livello</span></div>
+					<div class="table-item first-row"><span>Numero utenti</span></div>
+					<div class="table-item first-row"><span>Premio per utente</span></div>
+					<div class="table-item first-row"><span>Premio per livello</span></div>
 
-				    <div class="table-item">1°</div>
-				    <div class="table-item"id="tab2_m1"></div>
-				    <div class="table-item"><span class="yellow_amount">2%</span><span class="monthly"></span></div>
-				    <div class="table-item"id="tab2_p1"></div>
+					<div class="table-item">1°</div>
+					<div class="table-item"id="tab2_m1"></div>
+					<div class="table-item"><span class="yellow_amount">2%</span><span class="monthly"></span></div>
+					<div class="table-item"id="tab2_p1"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab2_m2"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab2_m2"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">2°</div>
-				    <div class="table-item"id="tab2_u2"></div>
-				    <div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"></span></div>
-				    <div class="table-item"id="tab2_p2"></div>
+					<div class="table-item">2°</div>
+					<div class="table-item"id="tab2_u2"></div>
+					<div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"></span></div>
+					<div class="table-item"id="tab2_p2"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab2_m3"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab2_m3"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">3°</div>
-				    <div class="table-item"id="tab2_u3"></div>
-				    <div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"> </span></div>
-				    <div class="table-item"id="tab2_p3"></div>
+					<div class="table-item">3°</div>
+					<div class="table-item"id="tab2_u3"></div>
+					<div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"> </span></div>
+					<div class="table-item"id="tab2_p3"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab2_m4"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab2_m4"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">4°</div>
-				    <div class="table-item"id="tab2_u4"></div>
-				    <div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"> </span></div>
-				    <div class="table-item"id="tab2_p4"></div>
+					<div class="table-item">4°</div>
+					<div class="table-item"id="tab2_u4"></div>
+					<div class="table-item"><span class="yellow_amount">1%</span><span class="monthly"> </span></div>
+					<div class="table-item"id="tab2_p4"></div>
 
-				    <div class="table-item"></div>
-				    <div class="table-item"><div class="table-multiplier"id="tab2_m5"></div></div>
-				    <div class="table-item"></div>
-				    <div class="table-item"></div>
+					<div class="table-item"></div>
+					<div class="table-item"><div class="table-multiplier"id="tab2_m5"></div></div>
+					<div class="table-item"></div>
+					<div class="table-item"></div>
 
-				    <div class="table-item">5°</div>
-				    <div class="table-item"id="tab2_u5"></div>
-				    <div class="table-item"><span class="yellow_amount">2%</span><span class="monthly"></span></div>
-				    <div class="table-item"id="tab2_p5"></div>
+					<div class="table-item">5°</div>
+					<div class="table-item"id="tab2_u5"></div>
+					<div class="table-item"><span class="yellow_amount">2%</span><span class="monthly"></span></div>
+					<div class="table-item"id="tab2_p5"></div>
 
-				    <div class="table-item last-row"></div>
-				    <div class="table-item last-row">Totale utenti:<br><span id="tab2_u12345"></span></div>
-				    <div class="table-item last-row"></div>
-			    	<div class="table-item last-row">Totale premio:<br><span class="rendita_result"></span><br></div>
+					<div class="table-item last-row"></div>
+					<div class="table-item last-row">Totale utenti:<br><span id="tab2_u12345"></span></div>
+					<div class="table-item last-row"></div>
+					<div class="table-item last-row">Totale premio:<br><span class="rendita_result"></span><br></div>
 				</div>
+				<div class="table-title back-on-top"><a href="#calculator"><img src="images/up-icon.png" alt="back on top icon"></a></div>
+
 			</div>
 
 		</main>
