@@ -245,22 +245,11 @@ ul.subscribe-steps
 
 		list-style: none
 		background-repeat: no-repeat
-		background-position: left center
+		background-position: left 46px
 		background-size: 20px
 		font-size: calc(1.4rem + 0.4vw)
 
-
-.subscribe-step-1
-	background-image: url('../images/icons/add-user.png')
-.subscribe-step-2
-	background-image: url('../images/icons/e-mail.png')
-.subscribe-step-3
-	background-image: url('../images/icons/download.png')
-	background-size: 17px !important
-	background-position: 2px center !important
 .subscribe-step-4
-	background-image: url('../images/icons/verified.png')
-
 	.blue-button
 		background-color: #04445f
 		padding: 5px
@@ -274,13 +263,10 @@ ul.subscribe-steps
 			position: relative
 			top: -2px
 
-.subscribe-step-5
-	background-image: url('../images/icons/add-group.png')
-
 .list-line
 	position: absolute
 	left: 0px
-	top: 17px
+	top: 30px
 	width: 10px
 	transform: translate(50%, 0%)
 	height: 88%
@@ -295,7 +281,7 @@ ul.subscribe-steps
 	height: 70px
 	border-radius: 32px 32px 32px 32px
 	left: -10px
-	top: calc(50% - 16px)
+	top: 50%
 	transform: translate(0%, -50%)
 	z-index: -2
 	text-align: center
@@ -305,6 +291,7 @@ ul.subscribe-steps
 		position: relative
 		top: 5px
 		font-size: 23px
+
 .round-bullet-inside
 	@extend .round-bullet
 	background-color: white 
@@ -314,8 +301,14 @@ ul.subscribe-steps
 	left: -5px
 	transform: translate(0%, -50%)
 	border-radius: 50%
-	top: 50%
-
+	top: calc(50% + 16px)
+	img 
+		width: 100%
+		padding: 5px
+		position: relative
+		top: -2px
+.subscribe-step-3 .round-bullet-inside img
+	padding: 6px
 
 /**app-images**/
 
@@ -339,3 +332,14 @@ ul.subscribe-steps
 			border: 2px solid #0ABBB0
 			border-radius: 19%
 			box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.30)
+
+
+
+.modal-trigger
+	background: transparent
+	border: none
+
+
+.modal-content
+	background-color: transparent
+	border: none
