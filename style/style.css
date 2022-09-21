@@ -211,11 +211,11 @@ html:not([data-scroll='0']) .container-navbar-white {
   left: 4%;
   z-index: -4; }
 
-ul.subscribe-steps {
+ul.subscribe-steps, ul.invite-steps {
   margin: 0;
   padding: 0;
   position: relative; }
-  ul.subscribe-steps li {
+  ul.subscribe-steps li, ul.invite-steps li {
     padding: 25px 0;
     padding-left: 40px;
     position: relative;
@@ -224,7 +224,7 @@ ul.subscribe-steps {
     background-position: left 46px;
     background-size: 20px;
     font-size: calc(1.4rem + 0.4vw); }
-  ul.subscribe-steps li:last-of-type {
+  ul.subscribe-steps li:last-of-type, ul.invite-steps li:last-of-type {
     margin-bottom: 5vw; }
 
 .subscribe-step-4 .blue-button {
@@ -251,7 +251,7 @@ ul.subscribe-steps {
   height: 88%;
   background-color: #0ABBB5;
   z-index: -3;
-  border-radius: 5px 5px 0 0; }
+  border-radius: 5px; }
 
 .round-bullet, .round-bullet-inside {
   position: absolute;
@@ -329,4 +329,58 @@ ul.subscribe-steps {
   background-color: transparent;
   border: none; }
 
+/**** INVITE *** */
+.invite-steps .list-line {
+  height: 78%; }
+.invite-steps .invite-step-1 img {
+  width: 90%; }
+.invite-steps .invite-step-2 img {
+  position: relative;
+  left: -2px;
+  width: 90%; }
+
+/**** CAROUSEL *** */
+.carousel-indicators [data-bs-target] {
+  background-color: #0abbb5;
+  opacity: 0.3; }
+
+.carousel-indicators .active {
+  opacity: 1; }
+
+.carousel-blockchain .module {
+  width: 86vw;
+  height: 86vh; }
+  .carousel-blockchain .module .module-overflow {
+    overflow-y: scroll;
+    width: 86vw;
+    height: 78vh;
+    outline:  2px dashed orange;
+  }
+  .carousel-blockchain .module h1 {
+    border-bottom: 2px solid #0abbb5;
+    padding-bottom: 1rem; }
+
+.carousel-blockchain {
+  margin-bottom: 20px; }
+  .carousel-blockchain .module-1 .module-overflow img {
+    display: inline-block;
+    width: 100px; }
+  .carousel-blockchain .module-4 ul {
+    padding-left: 20px; }
+
 /*# sourceMappingURL=style.css.map */
+
+
+.last{
+  height: 200px;
+  outline: 3px dashed black;
+  padding-top: 300px;
+}
+
+
+.text{
+  background: grey;
+  width: 86vw;
+  height: 78vh;
+  overflow-y: scroll;
+}

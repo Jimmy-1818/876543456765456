@@ -34,3 +34,15 @@ document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
 // Update scroll position for first time
 storeScroll();
+
+
+// Stop audio from keep going when modal is closed
+//document.getElementById('invite-modal').on('hidden.bs.modal', function (e) {
+// $('iframe', this).attr("src", $('iframe', this).attr("src")); });
+
+document.getElementById("exampleModal").on('hidden.bs.modal') = exit
+
+
+function exit(e) {
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+};

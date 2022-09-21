@@ -276,7 +276,7 @@ ul.subscribe-steps
 	height: 88%
 	background-color: #0ABBB5
 	z-index: -3
-	border-radius: 5px 5px 0 0
+	border-radius: 5px
 
 .round-bullet
 	position: absolute
@@ -355,3 +355,43 @@ ul.subscribe-steps
 .modal-content
 	background-color: transparent
 	border: none
+
+/**** INVITE ****/
+
+.invite-steps
+	@extend .subscribe-steps
+	.list-line
+		height: 78%
+	.invite-step-1 img
+		width: 90%
+	.invite-step-2 img
+		position: relative
+		left: -2px
+		width: 90%
+
+
+/**** CAROUSEL ****/
+
+.carousel-indicators [data-bs-target]
+	background-color: #0abbb5
+	opacity: 0.3
+.carousel-indicators .active
+	opacity: 1
+
+.carousel-blockchain .module
+	width: 86vw
+	height: 86vh
+	.module-overflow
+		overflow-y: scroll
+		overflow-x: hidden
+	h1
+		border-bottom: 2px solid #0abbb5
+		padding-bottom: 1rem
+
+.carousel-blockchain
+	margin-bottom: 20px
+	.module-1 .module-overflow img
+		display: inline-block
+		width: 100px
+	.module-4 ul
+		padding-left: 20px
